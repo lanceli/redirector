@@ -1,0 +1,8 @@
+{
+  "name": "Redirector",
+  "version": "0.0.0",
+  "main": "app/styles/main.css",
+  "dependencies": {
+  },
+  "devDependencies": {}
+}

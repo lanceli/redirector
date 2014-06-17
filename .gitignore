@@ -1,0 +1,19 @@
+# Nodejs #
+node_modules
+temp
+.tmp
+.sass-cache
+dist.safariextension
+app.safariextension/bower_components
+app.safariextension/scripts/*.js
+app.safariextension/styles/*.css
+test/bower_components
+
+# OS generated files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
