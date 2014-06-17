@@ -47,5 +47,7 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://lanceli.github.io/redirector/update.plist</string>
 </dict>
 </plist>
