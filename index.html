@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Redirector by lanceli</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Redirector</h1>
+        <p class="header">Redirector is a safari extension which allow redirect and block any http request by custom rules.</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/lanceli/redirector/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/lanceli/redirector/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/lanceli/redirector">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/lanceli">lanceli</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a name="redirector" class="anchor" href="#redirector"><span class="octicon octicon-link"></span></a>Redirector</h1>
+
+<p>Redirector is a safari extension which allow redirect and block any http request by custom rules.</p>
+
+<p>For chrome, check out <a href="https://chrome.google.com/webstore/detail/switcheroo-redirector/cnmciclhnghalnpfhhleggldniplelbg">Switcheroo Redirector</a></p>
+
+<h2>
+<a name="rules-examples" class="anchor" href="#rules-examples"><span class="octicon octicon-link"></span></a>Rules Examples</h2>
+
+<h3>
+<a name="redirect-request" class="anchor" href="#redirect-request"><span class="octicon octicon-link"></span></a>Redirect request</h3>
+
+<pre><code>from_url,to_url
+fonts.googleapis.com,fonts.useso.com
+ajax.googleapis.com,ajax.useso.com
+</code></pre>
+
+<h3>
+<a name="block-request" class="anchor" href="#block-request"><span class="octicon octicon-link"></span></a>Block Request</h3>
+
+<pre><code>block_url
+fonts.googleapis.com
+googleapis.*\/.js
+</code></pre>
+
+<p>if you want disable any rule, just add comma in end of rule,
+rule will diable when it contain more than one comma.</p>
+
+<pre><code>from_url,to_url,
+block_url,,
+</code></pre>
+
+<h2>
+<a name="usage-for-developer" class="anchor" href="#usage-for-developer"><span class="octicon octicon-link"></span></a>Usage for developer</h2>
+
+<p>For develop you need  <em>Git</em> and <em>Node.js</em>:</p>
+
+<pre><code>$ git clone git://github.com/lanceli/redirector.git
+$ cd redirector
+$ npm install
+$ grunt debug
+</code></pre>
+
+<p>For release:</p>
+
+<pre><code>$ grunt
+</code></pre>
+
+<h2>
+<a name="release-history" class="anchor" href="#release-history"><span class="octicon octicon-link"></span></a>Release History</h2>
+
+<p>See the <a href="CHANGELOG">CHANGELOG</a>.</p>
+
+<h2>
+<a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h2>
+
+<p>Author: <a href="http://github.com/lanceli">Lance Li</a></p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Licensed under the MIT License.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
