@@ -30,12 +30,6 @@ document.addEventListener 'beforeload', (event) ->
       return false
 
     switch target
-      when 'img'
-        setTimeout () ->
-          element.src = element.src.replace(response.from, response.to)
-          return
-        , 0
-        event.preventDefault()
       when 'style'
         element.href = element.href.replace(response.from, response.to)
         event.preventDefault()
@@ -44,5 +38,12 @@ document.addEventListener 'beforeload', (event) ->
         script.innerHTML = response.script
         document.head.insertBefore(script, document.head.firstChild)
         event.preventDefault()
+      else
+        if element.src
+            setTimeout () ->
+              element.src = element.src.replace(response.from, response.to)
+              return
+            , 0
+            event.preventDefault()
   return
 , true
