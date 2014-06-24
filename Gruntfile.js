@@ -176,6 +176,23 @@ module.exports = function (grunt) {
             css: ['<%= config.dist %>/styles/{,*/}*.css']
         },
 
+        // The following *-min tasks produce minifies files in the dist folder
+        imagemin: {
+            icon: {
+                files: {
+                    '<%= config.dist %>/icon.png': '<%= config.app %>/icon.png'
+                }
+            },
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= config.app %>/images',
+                    src: '{,*/}*.{gif,jpeg,jpg,png}',
+                    dest: '<%= config.dist %>/images'
+                }]
+            }
+        },
+
         // Empties folders to start fresh
         clean: {
             app: {
@@ -214,7 +231,7 @@ module.exports = function (grunt) {
                     cwd: '<%= config.app %>',
                     dest: '<%= config.dist %>',
                     src: [
-                        '*.{ico,png,txt}',
+                        '*.{ico,txt}',
                         'images/{,*/}*.{webp,gif}',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
@@ -232,6 +249,7 @@ module.exports = function (grunt) {
             ],
             dist: [
                 'coffee:dist',
+                'imagemin',
                 'compass:dist'
             ],
             test: [
