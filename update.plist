@@ -10,11 +10,11 @@
         <key>Developer Identifier</key>
             <string>FG9L6398US</string>
         <key>CFBundleVersion</key>
-            <string>0.1.0</string>
+            <string>0.1.1</string>
         <key>CFBundleShortVersionString</key>
-            <string>0.1.0</string>
+            <string>0.1.1</string>
         <key>URL</key>
-            <string>http://lanceli.github.io/redirector/redirector-0.1.0.safariextz</string>
+            <string>http://lanceli.github.io/redirector/redirector-0.1.1.safariextz</string>
         </dict>
     </array>
     </dict>
