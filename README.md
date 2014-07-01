@@ -1,7 +1,7 @@
 # Redirector
 Redirector is a safari extension which allow redirect and block any http request by custom rules.
 
-**[Download extension package](http://lanceli.github.io/redirector/redirector-0.1.1.safariextz)**
+**[Download extension package](http://lanceli.github.io/redirector/redirector-latest.safariextz)**
 
 
 For chrome, check out [Switcheroo Redirector](https://chrome.google.com/webstore/detail/switcheroo-redirector/cnmciclhnghalnpfhhleggldniplelbg)
