@@ -23,7 +23,7 @@ googleapis.*\/.js
 ```
 
 if you want disable any rule, just add comma in end of rule,
-rule will diable when it contain more than one comma.
+rule will disable when it contain more than one comma.
 
 ```
 from_url,to_url,
