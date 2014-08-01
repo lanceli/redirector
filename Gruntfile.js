@@ -33,9 +33,7 @@ module.exports = function (grunt) {
       },
       coffee: {
         files: ['<%= config.app %>/scripts/{,*/}*.{coffee,litcoffee,coffee.md}'],
-        tasks: ['coffee:app'],
-        options: {
-        }
+        tasks: ['coffee:app']
       },
       compass: {
         files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
@@ -135,7 +133,7 @@ module.exports = function (grunt) {
       dist: {
         files: {
           '<%= config.dist %>/scripts/redirector.js': [
-            '<%= config.app %>/scripts/redirector.js'
+              '<%= config.app %>/scripts/redirector.js'
           ]
         }
       }
@@ -237,7 +235,7 @@ module.exports = function (grunt) {
       dist: [
         'coffee:dist',
         'imagemin',
-        'compass:dist'
+        'compass:dist',
       ],
       test: [
         'coffee:test',

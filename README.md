@@ -1,5 +1,5 @@
 # Redirector
-Redirector is a safari extension which allow redirect and block any http request by custom rules.
+> Redirector is a safari extension which allow redirect and block any http request by custom rules. Powered by [Safari Extension generator](https://github.com/lanceli/generator-safari-extension)
 
 **[Download extension package](http://lanceli.github.io/redirector/redirector-latest.safariextz)**
 
@@ -52,4 +52,4 @@ See the [CHANGELOG](CHANGELOG).
 Author: [Lance Li](http://github.com/lanceli)
 
 ## License
-Licensed under the MIT License.
+[MIT](LICENSE)
